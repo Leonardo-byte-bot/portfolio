@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leonardo Donà | CV</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .cv-header { text-align:center; margin: 2rem 0 1rem; }
+    .btn {
+      display:inline-block; background:#0056A1; color:#fff; padding:.6rem 1rem;
+      border-radius:6px; text-decoration:none; font-weight:600;
+    }
+    .btn:hover { opacity:.9; }
+    .cv-wrapper { max-width:1000px; margin: 0 auto; padding: 0 1rem 2rem; }
+    .pdf-frame { width:100%; height:85vh; border:1px solid #e5e5e5; border-radius:8px; }
+    .fallback { margin-top: 1rem; text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="text-align:center;">Curriculum Vitae</h1>
+    <nav style="text-align:center;">
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="cv-wrapper">
+    <div class="cv-header">
+      <a class="btn" href="assets/cv/Leonardo_Donà_CV.pdf" download>Download CV (PDF)</a>
+      &nbsp; or &nbsp;
+      <a class="btn" href="assets/cv/Leonardo_Donà_CV.pdf" target="_blank" rel="noopener">Open in new tab</a>
+    </div>
+
+    <!-- Embedded PDF -->
+    <object class="pdf-frame"
+            data="assets/cv/Leonardo_Donà_CV.pdf"
+            type="application/pdf">
+      <div class="fallback">
+        <p>Your browser can’t display the PDF here.</p>
+        <p><a class="btn" href="assets/cv/Leonardo_Donà_CV.pdf">Download the PDF</a></p>
+      </div>
+    </object>
+  </main>
+
+  <footer>
+    <p style="text-align:center;">© 2025 Leonardo Donà</p>
+  </footer>
+</body>
+</html>
